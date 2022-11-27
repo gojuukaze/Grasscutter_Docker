@@ -15,7 +15,7 @@ RUN ./gradlew jar
 
 
 
-RUN WORKDIR /Grasscutter
+WORKDIR /Grasscutter
 RUN cp /code/Grasscutter/grasscutter*.jar .
 RUN cp /code/Grasscutter/keystore.p12 .
 RUN ln -s /code/Grasscutter_Resources/Resources/ resources
