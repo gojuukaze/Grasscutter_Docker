@@ -12,3 +12,23 @@ WORKDIR /code/Grasscutter
 
 RUN chmod +x gradlew
 RUN ./gradlew jar
+
+
+
+RUN WORKDIR /Grasscutter
+RUN cp /code/Grasscutter/grasscutter*.jar .
+RUN cp /code/Grasscutter/keystore.p12 .
+RUN ln -s /code/Grasscutter_Resources/Resources/ resources
+
+# clean
+RUN rm -rf /code/Grasscutter
+RUN apt clean
+
+EXPOSE 22102
+EXPOSE 443
+EXPOSE 80
+EXPOSE 8888
+EXPOSE 27017
+
+# ENTERPOINT ["java", "-jar", "grasscutter*.jar"]
+
