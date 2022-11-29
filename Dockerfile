@@ -1,7 +1,7 @@
 FROM openjdk:17.0.2-slim
 
 RUN apt update
-RUN apt install -y git vim
+RUN apt install -y git vim procps
 
 WORKDIR /code
 RUN git clone --depth=1 https://github.com/Grasscutters/Grasscutter
