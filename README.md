@@ -9,10 +9,30 @@ docker pull gojuukaze/grasscutter:latest
 
 cd run
 docker-compose up -d --build
+```
+
+## Restart sever  （重启服务）
+
+```shell
+cd run
+docker-compose up -d
+
+# If the image has updates, add -- build
+# 如果镜像有更新要添加 --build
+```
 
 
-#
-# create user 创建用户
+## Stop sever （停止服务）
+
+```shell
+cd run
+docker-compose stop
+```
+
+## Create user (创建用户)
+
+```shell
+
 docker exec -it grasscutter bash
 
 # Enter the command interface
@@ -20,6 +40,7 @@ docker exec -it grasscutter bash
 screen -r app
 account create username 1
 account account username pass
+
 
 # give items (给用户发送物品)
 # ！！！ This command can only be executed after running the game and logging in ！！！
@@ -35,24 +56,7 @@ give all x10  # 给所有物品10个
 
 > item id : https://pan.baidu.com/s/1DonYng7ApffLJeW6npo4fA?pwd=0bh3
 
-## restart sever  （重启服务）
-
-```shell
-cd run
-docker-compose up -d
-
-# 如果镜像有更新要添加 --build
-```
-
-
-## stop sever （停止服务）
-
-```shell
-cd run
-docker-compose stop
-```
-
-## run client （运行游戏）
+## Run client （运行游戏）
 
 1. download `UserAssembly.dll` （下载dll文件）
 * International （国际服）：https://cdn.discordapp.com/attachments/969297345240006736/1037131564666068992/UserAssembly32_patched.zip
