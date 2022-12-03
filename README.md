@@ -72,6 +72,8 @@ give all x10  # 给所有物品10个
 
    ![](1.png)  
    
+   .
+   
    ![](2.png)
 
    copy and paste the script in the FiddlerScript tab and click the Save Script button (复制下面脚本到FiddlerScript并保存)
