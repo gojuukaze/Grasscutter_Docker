@@ -24,11 +24,11 @@ RUN ln -s /code/Grasscutter_Resources/Resources/ resources
 RUN rm -rf /code/Grasscutter
 RUN apt clean
 
-EXPOSE 22102
+EXPOSE 22102/udp
 EXPOSE 443
 EXPOSE 80
 EXPOSE 8888
-EXPOSE 27017
+
 
 # ENTERPOINT ["java", "-jar", "grasscutter*.jar"]
 

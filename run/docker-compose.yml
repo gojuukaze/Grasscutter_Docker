@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  grasscutter:
+    build: .
+    container_name: grasscutter
+    ports:
+      - "443:443"
+      - "22102:22102/udp"
+      - "80:80"
+      - "8888:8888"
+
+    command: bash run.sh
+  mongo:
+    image: "mongo:5.0.14"
+    volumes:
+      - ./mongo_data:/data/db
