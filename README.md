@@ -64,7 +64,7 @@ give all x10  # 给所有物品10个
    * International （国际服）：https://cdn.discordapp.com/attachments/969297345240006736/1037131564666068992/UserAssembly32_patched.zip
    * China（国服）: https://drive.google.com/file/d/1EoFBaw9BWkOX3cIT06mqs5Qy5rSOD0Rj/view
    * Download from release: https://github.com/gojuukaze/Grasscutter_Docker/releases/
-   * Search on discord: https://discord.com/channels/965284035985305680/965284035985305685
+   * Search on discord: https://discord.com/channels/965284035985305680/969297345240006736
 
 2. Go to `the game path\Genshin Impact game\GenshinImpact_Data\Native\` and backup the `UserAssembly.dll` then move the one you downloaded above and renamed into that folder.  
    (进入上面这个游戏目录，备份 `UserAssembly.dll` ，并用下载的文件替换它 )
