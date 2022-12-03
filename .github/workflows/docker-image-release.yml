@@ -2,11 +2,8 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-  paths:
-    - 'Dockerfile'
+    tags:
+      - 'v*'
 
 jobs:
   push_to_registry:
@@ -26,7 +23,7 @@ jobs:
         id: date
         run: |
           echo "timestamp=$(date +'%s')" >> $GITHUB_ENV
-          echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+          echo "date=$(date +'%Y%m%d')" >> $GITHUB_ENV
 
 
       - name: Extract metadata (tags, labels) for Docker
@@ -36,8 +33,9 @@ jobs:
           images: gojuukaze/grasscutter
           tags: |
             type=sha,enable=false,priority=100,prefix=test-,suffix=${{ env.date }},format=short
-            type=raw,enable=true,priority=200,prefix=test-,suffix=,value=${{ env.timestamp }}
-      
+            type=raw,enable=false,priority=200,prefix=test-,suffix=,value=${{ env.timestamp }}
+            type=ref,enable=true,priority=300,event=tag,suffix=-${{ env.date }}
+
       - name: Build and push Docker image
         uses: docker/build-push-action@v3
         with:

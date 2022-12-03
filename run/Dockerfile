@@ -1,4 +1,4 @@
-FROM gojuukaze/grasscutter:3.2
+FROM gojuukaze/grasscutter:v3.2-20221203
 
 WORKDIR /Grasscutter
 
