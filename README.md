@@ -10,6 +10,8 @@ docker pull gojuukaze/grasscutter:latest
 cd run
 docker-compose up -d --build
 
+
+#
 # create user 创建用户
 docker exec -it grasscutter bash
 
@@ -64,7 +66,8 @@ docker-compose stop
 3. download `Fiddler Classic`  https://www.telerik.com/download/fiddler ，Route all traffic going to HoYoVerse/MiHoYo servers to the server host.  
   （下载 `Fiddler Classic` 并代理请求）
 
-   ![](1.png)
+   ![](1.png)  
+   
    ![](2.png)
 
    copy and paste the script in the FiddlerScript tab and click the Save Script button (复制下面脚本到FiddlerScript并保存)
