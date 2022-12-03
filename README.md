@@ -5,7 +5,9 @@ Run [Grasscutter](https://github.com/Grasscutters/Grasscutter)  on Docker
 ## Run sever （运行服务）
 
 ```shell
+git clone https://github.com/gojuukaze/Grasscutter_Docker.git
 docker pull gojuukaze/grasscutter:latest
+cd Grasscutter_Docker
 
 cd run
 docker-compose up -d --build
