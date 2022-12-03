@@ -3,9 +3,7 @@ name: Docker Image CI - release
 on:
   push:
     tags:
-      - 'v*'
-      
-
+      - v**
 jobs:
   push_to_registry:
     name: Push Docker image to Docker Hub
