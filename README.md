@@ -1,5 +1,7 @@
 # Grasscutter Docker
 
+> **3.3 is not currently supported (目前不支持3.3!!)**
+
 Run [Grasscutter](https://github.com/Grasscutters/Grasscutter)  on Docker
 
 ## Run sever （运行服务）
