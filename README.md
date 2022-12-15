@@ -8,7 +8,7 @@ Run [Grasscutter](https://github.com/Grasscutters/Grasscutter)  on Docker
 
 ```shell
 git clone https://github.com/gojuukaze/Grasscutter_Docker.git
-docker pull gojuukaze/grasscutter:latest
+docker pull gojuukaze/grasscutter:v3.2-20221203
 cd Grasscutter_Docker
 
 cd run
@@ -43,7 +43,7 @@ docker exec -it grasscutter bash
 # 进入命令界面
 screen -r app
 account create username 1
-account account username pass
+account resetpass username password
 
 
 # give items (给用户发送物品)
@@ -55,10 +55,10 @@ give @1 223 100 # 给id为1的用户100个纠缠之缘
 give all x10  # 给所有物品10个
 
 ```
-> * !! To exit from screen, press `ctrl-a-d` . You cannot use `ctrl-c`
-> * !! 从screen下退出要同时按下 `ctrl-a-d` ，不能使用 `ctrl-c`
+* !! To exit from screen, press `ctrl-a-d` . You cannot use `ctrl-c`
+* !! 从screen下退出要同时按下 `ctrl-a-d` ，不能使用 `ctrl-c`
 
-> item id : https://pan.baidu.com/s/1DonYng7ApffLJeW6npo4fA?pwd=0bh3
+> item id : https://github.com/jie65535/GrasscutterCommandGenerator/tree/main/Source/GrasscutterTools/Resources
 
 ## Run client （运行游戏）
 
