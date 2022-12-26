@@ -30,5 +30,5 @@ EXPOSE 80
 EXPOSE 8888
 
 
-# ENTERPOINT ["java", "-jar", "grasscutter*.jar"]
+# ENTERPOINT ["java", "-jar", "grasscutter*.jar"] 
 
