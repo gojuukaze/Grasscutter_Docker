@@ -6,7 +6,7 @@ RUN apt install -y git vim procps screen
 WORKDIR /code
 RUN git clone --depth=1 https://github.com/Grasscutters/Grasscutter
 
-RUN git clone --depth=1 https://git.crepe.moe/tamilpp25/Grasscutter_Resources
+RUN git clone --depth=1 https://git.crepe.moe/grasscutters/Grasscutter_Resources
 
 WORKDIR /code/Grasscutter
 
