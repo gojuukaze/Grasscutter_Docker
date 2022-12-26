@@ -1,6 +1,6 @@
 # Grasscutter Docker
 
-> **3.3 is not currently supported (目前不支持3.3!!)**
+> It should support 3.3, but I haven't tested it. (应该支持3.3，但我没进行测试)
 
 Run [Grasscutter](https://github.com/Grasscutters/Grasscutter)  on Docker
 
@@ -8,7 +8,7 @@ Run [Grasscutter](https://github.com/Grasscutters/Grasscutter)  on Docker
 
 ```shell
 git clone https://github.com/gojuukaze/Grasscutter_Docker.git
-docker pull gojuukaze/grasscutter:v3.2-20221203
+docker pull gojuukaze/grasscutter:v3.3-20221226
 cd Grasscutter_Docker
 
 cd run
@@ -39,9 +39,12 @@ docker-compose stop
 
 docker exec -it grasscutter bash
 
-# Enter the command interface
-# 进入命令界面
+# Enter the screen command interface
+# 进入命令screen界面
 screen -r app
+
+# create  account
+# 创建账号
 account create username 1
 account resetpass username password
 
@@ -62,11 +65,11 @@ give all x10  # 给所有物品10个
 
 ## Run client （运行游戏）
 
-1. download `UserAssembly.dll` （下载dll文件）
-   * International （国际服）：https://cdn.discordapp.com/attachments/969297345240006736/1037131564666068992/UserAssembly32_patched.zip
-   * China（国服）: https://drive.google.com/file/d/1EoFBaw9BWkOX3cIT06mqs5Qy5rSOD0Rj/view
-   * Download from release: https://github.com/gojuukaze/Grasscutter_Docker/releases/
-   * Search on discord: https://discord.gg/grasscutter
+1. download `RSAPatch.dll` （下载dll文件）
+   * RSAPatch ：https://github.com/34736384/RSAPatch
+   * or Search on discord: https://discord.gg/grasscutter
+   
+> for 3.3 and abrove,  `UserAssembly.dll` is not needed amnynore. (对于3.3和更高版本，不需要 `UserAssembly.dll`)
 
 2. Go to `the game path\Genshin Impact game\GenshinImpact_Data\Native\` and backup the `UserAssembly.dll` then move the one you downloaded above and renamed into that folder.  
    (进入上面这个游戏目录，备份 `UserAssembly.dll` ，并用下载的文件替换它 )
