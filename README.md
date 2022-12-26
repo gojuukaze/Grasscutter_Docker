@@ -74,11 +74,11 @@ give all x10  # 给所有物品10个
 3. download `Fiddler Classic`  https://www.telerik.com/download/fiddler ，Route all traffic going to HoYoVerse/MiHoYo servers to the server host.  
   （下载 `Fiddler Classic` 并代理请求）
 
-   ![](1.png)  
+   ![1.png](1.png)  
    
    .
    
-   ![](2.png)
+   ![2.png](2.png)
 
    copy and paste the script in the FiddlerScript tab and click the Save Script button (复制下面脚本到FiddlerScript并保存)
    ```java
@@ -100,6 +100,6 @@ give all x10  # 给所有物品10个
        }
    };
    ```
-   ![](3.png)
+   ![3.png](3.png)
 
 4. Run Game （运行游戏）
