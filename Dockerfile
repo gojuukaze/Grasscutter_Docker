@@ -6,7 +6,8 @@ RUN apt install -y git vim procps screen
 WORKDIR /code
 RUN git clone --depth=1 https://github.com/Grasscutters/Grasscutter
 # 不知道为什么会出现ssl验证失败
-RUN env GIT_SSL_NO_VERIFY=true git clone --depth=1 https://git.crepe.moe/grasscutters/Grasscutter_Resources
+RUN git config --global http.sslVerify false
+RUN git clone --depth=1 https://git.crepe.moe/grasscutters/Grasscutter_Resources
 
 WORKDIR /code/Grasscutter
 
