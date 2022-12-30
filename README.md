@@ -8,7 +8,7 @@ Run [Grasscutter](https://github.com/Grasscutters/Grasscutter)  on Docker
 
 ```shell
 git clone https://github.com/gojuukaze/Grasscutter_Docker.git
-docker pull gojuukaze/grasscutter:v3.3.1-20221226
+docker pull gojuukaze/grasscutter:latest
 cd Grasscutter_Docker
 
 cd run
