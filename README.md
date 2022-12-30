@@ -69,7 +69,7 @@ give all x10  # 给所有物品10个
    * RSAPatch ：https://github.com/34736384/RSAPatch
    * or Search on discord: https://discord.gg/grasscutter
    
-   > for 3.3 and abrove,  `UserAssembly.dll` is not needed amnynore. (对于3.3和更高版本，不需要 `UserAssembly.dll`)
+   > for 3.3 and abrove,  `UserAssembly.dll` is not needed amnynore. (对于3.3和更高版本，不再需要 `UserAssembly.dll`)
 
 2. Go to **the game path** and backup the `mhypbase.dll` then move the one you downloaded above and renamed into that folder.  
    (进入游戏目录，备份 `mhypbase.dll` ，并用下载的文件替换它 )
