@@ -1,7 +1,5 @@
 # Grasscutter Docker
 
-> It should support 3.3, but I haven't tested it. (应该支持3.3，但我没进行测试)
-
 Run [Grasscutter](https://github.com/Grasscutters/Grasscutter)  on Docker
 
 ## Run sever （运行服务）
